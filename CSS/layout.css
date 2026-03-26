@@ -1,0 +1,12 @@
+header, section, footer{
+    min-height: 100px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #ccc;
+
+}
+
+section:nth-of-type(even) {
+    background-color: #eee;
+}
