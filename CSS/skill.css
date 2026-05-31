@@ -1,0 +1,162 @@
+/* --- Skills Section --- */
+.skills-section {
+    padding: 100px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.skills-group {
+    margin-bottom: 25px;
+}
+
+.skills-group h3 {
+    font-size: 18px;
+    color: var(--orange-color);
+    margin-bottom: 8px;
+}
+
+.skills-group p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.skills-summary {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+
+
+.skills-decor-block {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.skills-decor-block {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.skills-orange-line {
+    width: 12px;
+    background-color: var(--orange-color);
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.software-card {
+    background-color: #1E1E1E;
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.software-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.software-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-ps {
+    color: #00c8ff;
+    border: 2px solid #00c8ff;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.15);
+}
+
+.card-ai {
+    color: #ff9a00;
+    border: 2px solid #ff9a00;
+    box-shadow: 0 0 15px rgba(255, 154, 0, 0.15);
+}
+
+.card-id {
+    color: #ff0055;
+    border: 2px solid #ff0055;
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.15);
+}
+
+.card-ae {
+    color: #9999ff;
+    border: 2px solid #9999ff;
+    box-shadow: 0 0 15px rgba(153, 153, 255, 0.15);
+}
+
+.card-pr {
+    color: #ea00ff;
+    border: 2px solid #ea00ff;
+    box-shadow: 0 0 15px rgba(234, 0, 255, 0.15);
+}
+
+.card-zb {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+/* --- Проєкти Фрукт --- */
+.project-section {
+    position: relative;
+    padding: 100px 0;
+}
+
+.project-decor-line {
+    position: absolute;
+    width: 12px;
+    background-color: var(--orange-color);
+    top: 0;
+    bottom: 0;
+    border-radius: 6px;
+}
+
+.left-line {
+    left: -40px;
+}
+
+.right-line {
+    left: -40px;
+}
+
+
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}

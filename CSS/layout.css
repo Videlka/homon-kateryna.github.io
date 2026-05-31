@@ -1,12 +1,9 @@
-header, section, footer{
-    min-height: 100px;
-}
-
-section:nth-of-type(odd) {
-    background-color: #ccc;
-
-}
-
-section:nth-of-type(even) {
-    background-color: #eee;
+:root {
+    --bg-color: #4C4E67;
+    --orange-color: #FF5900;
+    --dark-black: #1E1E1E;
+    --text-white: #FFFFFF;
+    
+    --font-heading: 'Alexandria', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 }

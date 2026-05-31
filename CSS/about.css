@@ -1,0 +1,87 @@
+/* ---Про мене ---*/
+.about-section {
+    position: relative;
+    padding: 100px 0;
+}
+
+.about-image img {
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    filter: grayscale(20%);
+}
+
+.about-decor-line {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    border-radius: 6px;
+    background-color: var(--orange-color);
+    z-index: 1;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 60px;
+    align-items: start;
+    padding-right: 60px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 320px;
+
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    filter: grayscale(20%);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-huge {
+    font-family: var(--font-heading);
+    font-size: 100px;
+    line-height: 0.9;
+    font-weight: 900;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+}
+
+.about-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--orange-color);
+}
+
+.about-text .desc {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.about-text h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--orange-color);
+}
+
+.toolkit-list {
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.8;
+    opacity: 0.85;
+}

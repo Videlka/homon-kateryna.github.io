@@ -1,0 +1,41 @@
+/* --- Секція Fruit --- */
+.fruit-section .project-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-title {
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.project-text h3 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--orange-color);
+}
+
+.project-text p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.85;
+    text-align: justify;
+}
+
+.project-text p strong {
+    color: var(--orange-color);
+    font-family: var(--font-body);
+    font-weight: 700;
+}

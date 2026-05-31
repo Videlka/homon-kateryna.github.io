@@ -4,61 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kira | Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/skill.css">
+    <link rel="stylesheet" href="CSS/project.css">
+    <link rel="stylesheet" href="CSS/bread.css">
 </head>
 
-<body>
-    <nav>
-        <div class="inside nav-container">
-            <div class="logo">
-                <img src="path-to-your-logo.png" alt="Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills and expertise</a></li>
-                <li><a href="#">Fruit</a></li>
-                <li><a href="#">Bread</a></li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="inside">
-            <h1 class="hero-title">PORT<br>FO<br>LIO</h1>
-            <div class="orange-line"></div>
-        </div>
+<body id="top">
+
+
+    <header class="navbar">
+
+        <a href="#top" class="nav-home" aria-label="main page">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M19 10V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V10M12 3L2 12H5L12 5L19 12H22L12 3Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <nav class="nav-links">
+            <a href="#about" class="nav-btn">About me</a>
+            <a href="#skills" class="nav-btn">Skills and expertise</a>
+            <a href="#fruit" class="nav-btn">Fruit</a>
+            <a href="#bread" class="nav-btn">Bread</a>
+        </nav>
     </header>
-    <section id="s1">
-        <div class="inside">
+
+    <main class="container">
 
 
-        </div>
-    </section>
-    <section id="s2">
-        <div class="inside">
+        <section class="hero-section">
+            <div class="hero-title-wrapper">
+                <h1 class="hero-title">PORT<br>FO<br>LIO</h1>
+            </div>
+            <div class="hero-line"></div>
+        </section>
 
+        <!-- Секція "Про мене" -->
+        <section id="about" class="about-section">
+            <div class="about-decor-line"></div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="IMG/Я.JPG" alt="Kira Portrait">
+                </div>
 
-        </div>
-    </section>
-    <section id="s3">
-        <div class="inside">
+                <div class="about-content">
+                    <h2 class="title-huge">ABOUT<br>ME</h2>
+                    <div class="about-text">
+                        <h3>Kira | Graphic & 3D Designer</h3>
+                        <p class="desc">Currently studying at the Lviv National Academy of Arts (LNAA). <br>I specialize in
+                            creating visual solutions by blending 2D graphics with 3D environments.</p>
 
+                        <h4>Software Toolkit:</h4>
+                        <ul class="toolkit-list">
+                            <li><strong>Design:</strong> Photoshop, Illustrator, InDesign.</li>
+                            <li><strong>Motion:</strong> After Effects, Premiere Pro.</li>
+                            <li><strong>3D:</strong> Maya, 3ds Max, ZBrush.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </section>
-    <footer>
-        <div class="inside">
+        <!-- Секція Скілів -->
+        <section id="skills" class="skills-section">
+            <div class="skills-grid">
+                <div class="skills-text">
+                    <h2 class="section-title">Skills and expertise</h2>
 
+                    <div class="skills-group">
+                        <h3>Graphic Design</h3>
+                        <p>• Visual Identity & Branding<br>• Typography & Layout<br>• Poster & Cover Design</p>
+                    </div>
 
-        </div>
+                    <div class="skills-group">
+                        <h3>3D & Motion</h3>
+                        <p>• High/Low Poly Modeling<br>• Texturing & Shading<br>• Motion Graphics</p>
+                    </div>
+
+                    <p class="skills-summary">Developed a comprehensive brand identity including logo design and a
+                        complete brand book. Additionally, specialized in logo animation and 3D motion graphics to
+                        enhance the brand's visual presence.</p>
+                </div>
+
+                <div class="skills-decor-block">
+                    <div class="skills-orange-line"></div>
+                    <div class="software-grid">
+                        <div class="software-card card-ps">
+                            <img src="IMG/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop">
+                        </div>
+                        <div class="software-card card-ai">
+                            <img src="IMG/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator">
+                        </div>
+                        <div class="software-card card-id">
+                            <img src="IMG/Adobe_InDesign_CC_icon.svg.png" alt="InDesign">
+                        </div>
+                        <div class="software-card card-ae">
+                            <img src="IMG/Adobe_After_Effects_CC_2026_icon.svg.png" alt="After Effects">
+                        </div>
+                        <div class="software-card card-pr">
+                            <img src="IMG/Adobe_Premiere_Pro_CC_icon.svg.png" alt="Premiere Pro">
+                        </div>
+                        <div class="software-card card-zb">
+                            <img src="IMG/Zbrush_4.jpg" alt="ZBrush">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція Brand Fruit -->
+        <section id="fruit" class="project-section fruit-section">
+            <div class="project-decor-line left-line"></div>
+            <div class="project-grid">
+                <div class="project-images">
+                    <img src="IMG/пляшки з пивом.jpg" alt="Fruit Bottles Mockup" class="project-img">
+                    <img src="IMG/Фірмовий стиль.jpg" alt="Fruit Stationery Mockup" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Brand “Fruit”</h2>
+                    <div class="project-text">
+                        <h3>Brand description</h3>
+                        <p><strong>Brand Philosophy:</strong><br>In an era where diversity and innovation drive every
+                            industry, we believe that beverages must constantly evolve. At Fruit, we aim to redefine the
+                            drinking experience by crafting unique flavor profiles. Our mission is to keep the product
+                            relevant for the modern palette by experimenting with bold ingredient fusions. While we
+                            embrace the new, we never overlook the timeless appeal of the classics. We offer a
+                            sophisticated take on this traditional beverage: a refined canon of beer infused with
+                            genuine fruit juices and berry nectars.</p>
+                        <p><strong>Core Values & Expertise:</strong><br>Our primary goal is to satisfy the customers'
+                            craving for both quality and originality. We prioritize excellence by using only fresh,
+                            authentic juices in our production. A standout feature of our brand identity is the focus on
+                            the ritual of consumption—alongside the beverage, we provide uniquely designed glassware
+                            that enhances the sensory experience of every sip.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція Bread -->
+        <section id="bread" class="project-section bread-section">
+            <div class="project-decor-line"></div>
+
+            <div class="project-grid">
+
+                <div class="project-info-side">
+                    <div class="bread-title-block">
+                        <h2 class="massive-title">Bread</h2>
+                    </div>
+
+                    <div class="project-text">
+                        <h3>Bread & Form: Experimental Typography</h3>
+                        <p>This project explores the intersection of culinary art and graphic design. Using food
+                            elements as a medium, I created a tactile typographic compass that plays with texture and
+                            organic shapes. The goal was to transform a mundane object—bread—into a canvas for visual
+                            storytelling, emphasizing the raw and "crumbs" nature of the product through gritty,
+                            granular lettering.</p>
+                    </div>
+                </div>
+
+                <div class="project-images-side">
+                    <img src="IMG/aa_page-0001(2).jpg" alt="Bread Yellow Version" class="project-img">
+                    <img src="IMG/aaa_page-0001.jpg" alt="Bread Grey Version" class="project-img">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Темний підвал сайту -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Kira. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>

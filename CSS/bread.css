@@ -1,0 +1,86 @@
+/* --- Секція Bread --- */
+.bread-section {
+    position: relative;
+    padding: 80px 0;
+
+}
+
+.bread-section .project-decor-line {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    background-color: var(--orange-color);
+    z-index: 10;
+}
+
+.bread-section .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 0px;
+    align-items: start;
+}
+
+.project-info-side {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+/*  Чорна плашка BREAD  */
+.bread-title-block {
+    background-color: #1E1E1E;
+    margin-left: -50vw;
+    padding-left: 50vw;
+    margin-right: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Стиль слова Bread */
+.massive-title {
+    font-family: var(--font-heading);
+    font-size: 90px;
+    font-weight: 900;
+    color: var(--orange-color);
+    margin: 0;
+    line-height: 1;
+    padding-left: 80px;
+}
+
+
+.bread-section .project-text {
+    padding-right: 40px;
+}
+
+.bread-section .project-text h3 {
+    color: var(--orange-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.bread-section .project-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.project-images-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*відстань між картинками*/
+    width: 100%;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
