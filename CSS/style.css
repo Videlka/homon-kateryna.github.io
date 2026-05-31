@@ -43,8 +43,24 @@ h4 {
 /* --- Hero Section --- */
 .hero-section {
     position: relative;
-    padding-top: 120px; 
-    min-height: 100vh;
+    
+    /* Твої чіткі розміри під екран монітора */
+    width: 600px !important;
+    height: 400px !important;
+    
+    /* Фірмовий темно-синій колір фону з твоїх скріншотів */
+    background-color: #4A5069 !important; 
+    
+    /* Робимо флексбокс, щоб ідеально відцентрувати текст всередині */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Ховаємо все зайве та прибираємо стандартні великі відступи */
+    overflow: hidden;
+    padding: 0 !important;
+    box-sizing: border-box;
+    margin: 0 auto; /* Центрує сам блок на сторінці */
 }
 
 /* Порфтоліо */
@@ -52,27 +68,28 @@ h4 {
     font-family: var(--font-heading);
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 220px; 
-    line-height: 0.85;
-    letter-spacing: -3px;
-    color: var(--orange-color); 
+    color: var(--orange-color);
+    
+    /* Підбираємо розмір літер, щоб вони ідеально заповнили кадр 600х400 */
+    font-size: 85px !important; 
+    
+    /* Зближуємо рядки та літери, як на твоєму фінальному скріншоті */
+    line-height: 0.85 !important; 
+    letter-spacing: -3px !important;
+    
+    text-align: left; /* Текст вирівняний по лівому краю всередині своєї коробки */
+    margin: 0 !important; /* Прибираємо зсуви, флексбокс сам усе вирівняє */
 }
 
 .portfolio-white {
     color: #FFFFFF !important;
-    font-size: 275px;
 }
 
 
 .portfolio-p {
-    display: inline-block !important; 
+    display: inline-block !important;
     color: var(--orange-color) !important;
     font-size: inherit;
-    line-height: inherit;
-    
-
-    opacity: 0;
-    transform: translateY(50px);
 }
 @media (max-width: 768px) {
     body {
