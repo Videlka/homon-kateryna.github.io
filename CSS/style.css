@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.header-navigation {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; 
+    padding: 20px 40px; 
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -33,24 +43,36 @@ h4 {
 /* --- Hero Section --- */
 .hero-section {
     position: relative;
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
+    padding-top: 120px; 
+    min-height: 100vh;
 }
 
 /* Порфтоліо */
 .hero-title {
-    font-size: 220px;
-    line-height: 0.8;
+    font-family: var(--font-heading);
     font-weight: 900;
-    color: var(--orange-color);
     text-transform: uppercase;
-    letter-spacing: -4px;
+    font-size: 220px; 
+    line-height: 1;
+    color: var(--orange-color); 
+}
+
+.portfolio-white {
+    color: #FFFFFF !important;
+    font-size: 275px;
 }
 
 
+.portfolio-p {
+    display: inline-block !important; 
+    color: var(--orange-color) !important;
+    font-size: inherit;
+    line-height: inherit;
+    
 
+    opacity: 0;
+    transform: translateY(50px);
+}
 @media (max-width: 768px) {
     body {
         padding-top: 140px;
@@ -101,4 +123,35 @@ h4 {
     margin-top: 100px;
     font-size: 12px;
     opacity: 0.6;
+}
+
+
+.animate-flip-p {
+    opacity: 0;
+    animation: popInSpring 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes popInSpring {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scaleY(0) scaleX(0.7);
+    }
+
+    60% {
+        opacity: 1;
+
+        transform: translateY(-10px) scaleY(1.15) scaleX(0.95);
+    }
+
+    80% {
+
+        transform: translateY(2px) scaleY(0.97) scaleX(1.02);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: translateY(0) scaleY(1) scaleX(1);
+    }
 }
